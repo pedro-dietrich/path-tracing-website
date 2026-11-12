@@ -5,10 +5,28 @@
 This is a simple website made to showcase my graduation project, named **Path Tracing: Performance Analysis on Ray Tracing Dedicated Hardware**.
 
 
-## Install Guide
+## Requirements
 
-Download the Rust toolchain.
+- Rust toolchain (`rustup`, `cargo` and `rustc`)
+- WebAssembly target
+  - Run the command: `rustup target add wasm32-unknown-unknown`
+- Trunk
+  - Run the command: `cargo install --locked trunk`
 
-Run the command `cargo build` to fetch the required dependencies and compile the project.
 
-Run the command `cargo run` to execute the project.
+## Build and Run
+
+### Backend
+
+Run the command `cargo run -p backend` to compile and execute the project.
+
+
+### Frontend
+
+To build and run the frontend, use the following commands:
+
+```bash
+cd frontend
+trunk build
+trunk watch
+```

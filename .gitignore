@@ -1,1 +1,11 @@
-/target
+/target/
+/frontend/dist/
+
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+.env
+.env.*
