@@ -5,3 +5,5 @@ edition = "2024"
 
 [dependencies]
 leptos = { version = "0.8.23", features = ["csr"] }
+leptos_router = "0.8.17"
+web-sys = { version = "0.3.107", features = ["Window", "Storage", "Document", "Element"] }
